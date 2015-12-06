@@ -1,39 +1,68 @@
-<!doctype html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Fireshow</title>
-
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Fireshow</h1>
-        <p>Powerpoint presentation Wi-Fi remote control for Firefox OS</p>
-
-        <p class="view"><a href="https://github.com/jesobreira/fireshow">View the Project on GitHub <small>jesobreira/fireshow</small></a></p>
-
-      </header>
-      <section>
-        <p><a href="https://github.com/jesobreira/fireshow-server/releases/download/1.0/Fireshow.exe">Download Fireshow server here</a></p>
-
-<p>Source code: <a href="http://github.com/jesobreira/fireshow">client</a> <a href="http://github.com/jesobreira/fireshow-server">server</p>
-
-<p>(this site is still under construction)</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/jesobreira">jesobreira</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Fireshow</title>
+<link rel="prefetch" type="application/l10n" href="lang.ini" />
+<link href="site.css" rel="stylesheet" type="text/css">
+<link href="index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="l10n.js"></script>
+<script type="text/javascript" src="jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-blind.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-bounce.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-clip.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-drop.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-fade.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-fold.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-scale.min.js"></script>
+<script type="text/javascript" src="jquery.ui.effect-slide.min.js"></script>
+<script type="text/javascript" src="wb.slideshow.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+   $("#SlideShow1").slideshow(
+   {
+      interval: 5000,
+      type: 'sequence',
+      effect: 'fade',
+      direction: '',
+      effectlength: 2000
+   });
+});
+</script>
+</head>
+<body>
+<div id="space"><br></div>
+<div id="container">
+<div id="SlideShow1" style="position:absolute;left:575px;top:46px;width:194px;height:370px;z-index:0;">
+<img class="image" src="images/1.png" alt="" title="">
+<img class="image" src="images/2.png" style="display:none;" alt="" title="">
+<img class="image" src="images/3.png" style="display:none;" alt="" title="">
+<img class="image" src="images/4.png" style="display:none;" alt="" title="">
+<img class="image" src="images/5.png" style="display:none;" alt="" title="">
+<img class="image" src="images/6.png" style="display:none;" alt="" title="">
+</div>
+<div id="wb_Image1" style="position:absolute;left:545px;top:7px;width:257px;height:465px;z-index:1;">
+<img src="images/Flame.png" id="Image1" alt=""></div>
+<div id="wb_Text1" style="position:absolute;left:56px;top:32px;width:344px;height:41px;z-index:2;text-align:left;">
+<span style="color:#4682B4;font-family:Arial;font-size:35px;"><strong>Fireshow</strong></span></div>
+<div id="wb_Text2" style="position:absolute;left:85px;top:109px;width:460px;height:19px;z-index:3;text-align:left;">
+<span style="color:#000000;font-family:Arial;font-size:17px;"><strong data-l10n-id="server"></strong></span></div>
+<div id="wb_Image2" style="position:absolute;left:271px;top:255px;width:180px;height:63px;z-index:4;">
+<a href="https://marketplace.firefox.com/app/fireshow/" target="_blank"><img src="images/firefox.png" id="Image2" alt=""></a></div>
+<div id="wb_Image3" style="position:absolute;left:85px;top:255px;width:183px;height:64px;z-index:5;">
+<a href="https://play.google.com/store/apps/details?id=ml.jefrey.fireshow" target="_blank"><img src="images/gplay.jpg" id="Image3" alt=""></a></div>
+<div id="wb_Image4" style="position:absolute;left:85px;top:137px;width:186px;height:57px;z-index:6;">
+<a href="https://github.com/jesobreira/fireshow-server/releases/download/1.0/Fireshow.exe"><img src="images/windows.png" id="Image4" alt=""></a></div>
+<div id="wb_Text3" style="position:absolute;left:85px;top:222px;width:460px;height:19px;z-index:7;text-align:left;">
+<span style="color:#000000;font-family:Arial;font-size:17px;"><strong data-l10n-id="client"></strong></span></div>
+<div id="wb_Image5" style="position:absolute;left:85px;top:377px;width:172px;height:60px;z-index:8;">
+<a href="http://github.com/jesobreira/fireshow" target="_blank"><img src="images/github.png" id="Image5" alt=""></a></div>
+<div id="wb_Text4" style="position:absolute;left:85px;top:348px;width:460px;height:19px;z-index:9;text-align:left;">
+<span style="color:#000000;font-family:Arial;font-size:17px;"><strong data-l10n-id="contribute"></strong></span></div>
+<div id="wb_Text5" style="position:absolute;left:56px;top:73px;width:489px;height:16px;z-index:10;text-align:left;">
+<span style="color:#000000;font-family:Arial;font-size:13px;" data-l10n-id="description"></span></div>
+</div>
+</body>
 </html>
