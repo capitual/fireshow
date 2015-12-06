@@ -17,7 +17,7 @@ Currently, we have the following servers:
 
 | Project name | Platform | Download | Source code |
 |--------------|----------|----------|-------------|
-| Fireshow Server (official) | Windows | [Download]() | [See on GitHub](http://github.com/jesobreira/fireshow-server) |
+| Fireshow Server (official) | Windows | [Download](https://github.com/jesobreira/fireshow-server/releases/download/1.0/Fireshow.exe) | [See on GitHub](http://github.com/jesobreira/fireshow-server) |
 
 If you want to contribute, you can also create your very own Fireshow server. The whole API is documented [here](https://github.com/jesobreira/fireshow/wiki/API).
 
