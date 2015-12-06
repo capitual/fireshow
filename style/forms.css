@@ -1,0 +1,94 @@
+.text-input {
+ -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  display: block;
+  resize: none;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid #D1D1D1;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  font-family: "Open Sans",Sans-serif;
+  font-size: 1.4rem;
+  margin-top: 3px;
+}
+
+.button {
+	width: 100%;
+	padding: 0.5rem 1rem;
+	border: 1px solid #D1D1D1;
+	border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+	font-family: "Open Sans",Sans-serif;
+	font-size: 1.4rem;
+	margin-top: 3px;
+	-webkit-appearance: none;
+	align-items: flex-start;
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: rgb(250, 250, 250);
+	background-image: url(http://robnyman.github.io/Firefox-OS-Boilerplate-App/images/buttons/ui/default.png);
+	background-origin: padding-box;
+	background-size: auto 100%;
+	border-bottom-color: rgb(166, 166, 166);
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-image-outset: 0px;
+	border-image-repeat: stretch;
+	border-image-slice: 100%;
+	border-image-source: none;
+	border-image-width: 1;
+	border-left-color: rgb(166, 166, 166);
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-right-color: rgb(166, 166, 166);
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-top-color: rgb(166, 166, 166);
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-top-style: solid;
+	border-top-width: 1px;
+	box-sizing: border-box;
+	color: rgb(51, 51, 51);
+	cursor: default;
+	display: inline-block;
+	font-size: 16px;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	height: 38px;
+	letter-spacing: normal;
+	line-height: 38px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	outline-color: rgb(51, 51, 51);
+	outline-style: none;
+	outline-width: 0px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	padding-bottom: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 0px;
+	text-align: center;
+	text-decoration: none;
+	text-indent: 0px;
+	text-overflow: ellipsis;
+	text-rendering: auto;
+	text-shadow: rgba(255, 255, 255, 0.298039) 1px 1px 0px;
+	text-transform: none;
+	vertical-align: top;
+	white-space: nowrap;
+	word-spacing: 0px;
+	writing-mode: lr-tb;
+	-webkit-writing-mode: horizontal-tb;
+}
+
+.button:active,.button-active {
+	background: rgb(0, 138, 170);
+	border-color: rgb(0, 138, 170);
+}

@@ -1,0 +1,24 @@
+{
+  "name": "Fireshow",
+  "description": "Control your Powerpoint presentation using your Firefox OS phone",
+  "launch_path": "/index.html",
+  "developer": {
+    "name": "Jefrey Sobreira Santos",
+    "url": "https://github.com/jesobreira/fireshow"
+  },
+  "icons": {
+    "32": "/images/logo32.png",
+    "48": "/images/logo48.png",
+    "64": "/images/logo64.png",
+    "128": "/images/logo128.png"
+  },
+  "default_locale": "en-US",
+  "installs_allowed_from": ["*"],
+  "version": "1.0.0",
+  "locales": {
+    "pt-br": {
+      "name": "Fireshow",
+      "description": "Controle sua apresentação Powerpoint usando o seu Firefox OS"
+    }
+  }
+}

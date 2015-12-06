@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   
+   <link rel="prefetch" type="application/l10n" href="lang.ini" />
+   
+   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+   <link rel="stylesheet" type="text/css" href="style/icons.css"/>
+   <link rel="stylesheet" type="text/css" href="style/principal.css"/>
+   <link rel="stylesheet" type="text/css" href="style/header.css"/>
+   <link rel="stylesheet" type="text/css" href="style/toolbar.css"/>
+   <link rel="stylesheet" type="text/css" href="style/sidebar.css"/>
+   <link rel="stylesheet" type="text/css" href="style/menuaction.css"/>
+   <link rel="stylesheet" type="text/css" href="style/menulist.css"/>
+   <link rel="stylesheet" type="text/css" href="style/pagebody.css"/>
+   <link rel="stylesheet" type="text/css" href="style/forms.css"/>
+   <link rel="stylesheet" type="text/css" href="app.css" />
+   <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+   <script type="text/javascript" src="js/l10n.js"></script>
+   <script type="text/javascript" src="js/dispatcher.js"></script>
+   <script type="text/javascript" src="js/toolbar.js"></script>
+   <!-- <script type="text/javascript" src="js/menuaction.js"></script> -->
+   <script type="text/javascript" src="js/menulist.js"></script>
+   <script type="text/javascript" src="js/pagebody.js"></script>
+   <script type="text/javascript" src="app.js"></script>
+   <title>Fireshow</title>
+</head>
+<body>
+   <section class="principal">
+      <header>
+        <h1>Fireshow</h1>
+        <ul>
+           <li id="closeconnection" class="icon cancel"/>
+        </ul>
+      </header>
+
+      <div id="page0" class="pagebody" aria-owns="tb1" aria-expanded="true">
+	<header>
+        <h1>Fireshow</h1>
+      </header>
+         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+         <div style="margin:0.5rem 1rem 0.5rem 1rem">
+         <p><input type="text" name="ip" id="ip" class="text-input" placeholder="" data-l10n-id="servername" /></p>
+		 <p><input type="number" name="port" id="port" class="text-input" placeholder="" data-l10n-id="serverport" /></p>
+		 <p><input type="password" name="pwd" id="pwd" class="text-input" placeholder="" data-l10n-id="serverpassword" /></p>
+		 <p><span data-l10n-id="downloadserver"></span><br/>
+			<blockquote>http://jesobreira.github.io/fireshow</blockquote>
+		</p>
+         </div>
+         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+      </div>
+
+      <div id="page1" class="pagebody" aria-owns="tb0">
+         <div style="margin:0.5rem 1rem 0.5rem 1rem">
+         <h3 class="x-of-y"><span data-l10n-id="slide"></span> <span id="slideX"></span> <span data-l10n-id="of"></span> <span id="slideY"></span></h3>
+         
+		 <!-- main control window -->
+		 
+		 <table>
+		 <tr>
+		 <td>
+		 <button class="button icon previous | cmd" rel="previous"></button>
+		 </td>
+		 <td>
+		 <button class="button icon next | cmd" rel="next"></button>
+		 </td>
+		 </tr>
+		 <tr>
+		 <td>		 
+		 <button class="button icon back | cmd" rel="first"></button>
+		 </td>
+		 <td>
+		 <button class="button icon forward | cmd" rel="last"></button>
+		 </td>
+		 </tr>
+		 <tr>
+		 <td>
+		 <button class="button icon snooze | cmd" rel="blackout"></button>
+		 </td>
+		 <td>
+		 <button class="button icon cancel | cmd" rel="exit"></button>
+		 </td>
+		 </tr>
+		 </table>
+		 <!-- end main control window -->
+		 
+         </div>
+         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+      </div>
+
+      <div id="page2" class="pagebody" aria-owns="tb0">
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+         <div style="margin:0.5rem 1rem 0.5rem 1rem">
+			<p id="slidenotes"></p>
+         </div>
+         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+      </div>
+	  
+	  <div id="page3" class="pagebody" aria-owns="tb0">
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+         <div style="margin:0.5rem 1rem 0.5rem 1rem">
+			<img id="slidepicture" />
+         </div>
+         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+      </div>
+	  
+	  <div id="page5" class="pagebody" aria-owns="tb0">
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+         <div style="margin:0.5rem 1rem 0.5rem 1rem">
+			<div id="gotoslide"></div>
+         </div>
+         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+      </div>
+	  
+	   <div id="page4" class="pagebody" aria-owns="tb2">
+		<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+         <div style="margin:0.5rem 1rem 0.5rem 1rem">
+			<p data-l10n-id="starttheshow"></p>
+         </div>
+         <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+      </div>
+
+      <footer class="toolbar">
+         <menu id="tb0" type="toolbar" aria-expanded="true">
+            <li aria-controls="page1" data-l10n-id="slides"></li>
+            <li aria-controls="page2" data-l10n-id="notes"></li>
+            <li aria-controls="page3" data-l10n-id="view"></li>
+			<li aria-controls="page5" data-l10n-id="goto"></li>
+         </menu>
+		 
+		 <menu id="tb1" type="toolbar" aria-expanded="true">
+			<button id="connect" class="button" data-l10n-id="connect"></button>
+         </menu>
+		 
+		 <menu id="tb2" type="toolbar" aria-expanded="true">
+			<button id="startppt" class="button" data-l10n-id="startppt"></button>
+         </menu>
+      </footer>
+	  
+   </section>
+
+</body>
+</html>
